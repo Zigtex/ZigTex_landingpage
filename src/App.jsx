@@ -559,26 +559,29 @@ const FeatureCard = ({ icon: Icon, title, description, delay }) => {
 
 const NavPill = ({ onBookClick }) => {
   return (
-    <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[92%] sm:w-[95%] max-w-[672px] rounded-full bg-[#0a0a0a]/70 backdrop-blur-2xl border border-white/10 px-3 py-2.5 sm:px-4 sm:py-3 flex items-center justify-between transition-all duration-500">
-      <div className="flex items-center gap-2 sm:gap-3 pl-1 sm:pl-2">
-       
-       <img 
-  src={logo} 
-  alt="Zigtex Logo"
-  className="h-8 sm:h-9 w-auto object-contain"
-/>
-      </div>
-      
-      <div className="hidden md:flex items-center gap-8 font-sans text-[11px] uppercase tracking-widest text-neutral-300 font-semibold">
-        <a href="#problem" className="hover:text-white transition-colors duration-300">The Problem</a>
-        <a href="#solution" className="hover:text-white transition-colors duration-300">Platform</a>
-        <a href="#how-it-works" className="hover:text-white transition-colors duration-300">How it Works</a>
-      </div>
+    <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[92%] sm:w-[95%] max-w-[1100px] rounded-full bg-[#0a0a0a]/70 backdrop-blur-2xl border border-white/10 px-4 py-2.5 sm:px-6 sm:py-3 flex items-center justify-between transition-all duration-500">
+  
+  <div className="flex items-center gap-3 pl-2 h-8">
+    <img 
+      src={logo} 
+      alt="Zigtex Logo"
+      className="h-full w-auto object-contain"
+    />
+  </div>
+  
+  <div className="hidden md:flex items-center gap-8 font-sans text-[11px] uppercase tracking-widest text-neutral-300 font-semibold">
+    <a href="#problem" className="hover:text-white transition-colors duration-300">The Problem</a>
+    <a href="#solution" className="hover:text-white transition-colors duration-300">Platform</a>
+    <a href="#how-it-works" className="hover:text-white transition-colors duration-300">How it Works</a>
+  </div>
 
-      <button onClick={onBookClick} className="bg-white text-black px-4 py-1.5 sm:px-5 sm:py-2 rounded-full font-sans text-[12px] sm:text-sm font-semibold hover:bg-neutral-200 transition-colors duration-300 cursor-pointer">
-        Book Demo
-      </button>
-    </nav>
+  <button 
+    onClick={onBookClick} 
+    className="bg-white text-black px-4 py-1.5 sm:px-5 sm:py-2 rounded-full font-sans text-[12px] sm:text-sm font-semibold hover:bg-neutral-200 transition-colors duration-300 cursor-pointer"
+  >
+    Book Demo
+  </button>
+</nav>
   );
 };
 
