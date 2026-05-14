@@ -884,18 +884,20 @@ export default function App() {
       </div>
 
       {/* Hero Section */}
-      <main className="relative z-10 flex flex-col items-center justify-center min-h-[100svh] px-4 pt-20 overflow-hidden">
+   <main className="relative z-10 flex flex-col items-center justify-center min-h-[100svh] px-4 pt-20">
         <div className="max-w-5xl mx-auto text-center w-full">
           <motion.div 
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: [0.23, 1, 0.32, 1] }}
           >
-            <h1 className="font-heading font-bold text-4xl sm:text-6xl md:text-8xl lg:text-[100px] leading-[1.1] md:leading-[0.95] tracking-[-0.04em] mb-8 text-[#FEFEFE]">
-              Take Control of Your <br />
-              <span className="text-shimmer italic pr-4">Outbound Sales Pipeline</span>
-            </h1>
-          </motion.div>
+         <h1 className="font-heading font-bold text-4xl sm:text-6xl md:text-8xl lg:text-[100px] leading-[1] tracking-[-0.04em] mb-8 text-[#FEFEFE] px-4 max-w-[1200px] mx-auto overflow-visible">
+  Take Control of Your <br />
+  <span className="text-shimmer italic inline-block">
+    Outbound Sales Pipeline
+  </span>
+</h1>
+   </motion.div>
           
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
@@ -1194,11 +1196,8 @@ export default function App() {
             {
               q: "How long does it take to see results?",
               a: "We can have your outbound engine up and running within 2 weeks. Most partners start seeing a consistent meeting flow within the first 30 days of active outreach."
-            },
-            {
-              q: "Can I use my current tools with Zigtex?",
-              a: "Yes. Zigtex can either replace your current stack or sit on top of it to manage the deliverability and SDR layer that many traditional tools lack."
             }
+            
           ].map((faq, i) => (
             <FAQItem key={i} question={faq.q} answer={faq.a} />
           ))}
@@ -1431,8 +1430,13 @@ export default function App() {
       <footer className="relative z-10 bg-[#050505] border-t border-white/5 pt-12 pb-12 px-6">
         <div className="max-w-7xl mx-auto flex flex-col items-center gap-6">
           <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-gradient-to-r from-violet-500 to-cyan-500" />
-            <span className="font-heading font-bold text-2xl text-white tracking-[-0.02em]">Zigtex</span>
+             <div className="flex items-center pl-1 sm:pl-2">
+  <img
+    src={zigtexLogo}
+    alt="Zigtex Logo"
+    className="h-6 sm:h-8 md:h-6 w-auto object-contain"
+  />
+</div>
           </div>
           
           <p className="font-sans text-xs text-neutral-400">
