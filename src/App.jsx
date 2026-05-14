@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Mail, Shield, Share2, Users, AlertTriangle, CheckCircle, Target, Activity, Send, TrendingUp, ChevronDown } from 'lucide-react';
+import { Mail, Shield, Phone ,Globe, Users, AlertTriangle, CheckCircle, Target, Activity, Send, TrendingUp, ChevronDown } from 'lucide-react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import {
   Scene,
@@ -1391,7 +1391,7 @@ export default function App() {
               <div className="group">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-8 h-8 rounded-lg bg-cyan-500/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <Share2 size={14} className="text-cyan-400" />
+                      <Globe size={14} className="text-cyan-400" />
                   </div>
                   <h4 className="text-[10px] uppercase tracking-[0.2em] text-neutral-500 font-bold">Website</h4>
                 </div>
@@ -1411,7 +1411,7 @@ export default function App() {
               <div className="group">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-8 h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <TrendingUp size={14} className="text-emerald-400" />
+                    <Phone size={14} className="text-emerald-400" />
                   </div>
                   <h4 className="text-[10px] uppercase tracking-[0.2em] text-neutral-500 font-bold">Contact</h4>
                 </div>
